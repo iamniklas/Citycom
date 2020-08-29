@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#26C6DA</color>
+    <color name="colorPrimaryDark">#26C6DA</color>
+    <color name="colorAccent">#0288D1</color>
+
+    <color name="backgroundtrans1">#FFFFFF</color>
+    <color name="backgroundtrans2">#03A9F4</color>
+
+    <color name="fabColor">#FFFF00</color>
+    <color name="yellow">#FFEB3B</color>
+</resources>

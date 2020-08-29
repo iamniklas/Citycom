@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity" android:orientation="vertical">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="citycom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="20sp" android:textAlignment="center" android:layout_weight="1"
+            android:id="@+id/textviewHeadline" android:gravity="center" android:textColor="@color/colorAccent"
+            android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="0.25"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/plaintextCityInput" android:hint="Deine Stadt" android:layout_weight="0"
+            android:background="@drawable/edittextstyle" android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp" android:paddingStart="15dp" android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+    <Button
+            android:text="Suche"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:id="@+id/buttonSearchCity"
+            android:textSize="20sp" android:background="@drawable/buttonstyle" android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp" android:fontFamily="@font/nunito_sans_extralight"
+            android:textStyle="bold"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/textviewInformationHeadline"
+            android:textAlignment="center"
+            android:layout_weight="0.5" android:layout_height="0dp" android:text="Lokale Daten"
+            android:gravity="center_vertical" android:textSize="14sp" android:textColor="@color/colorAccent"
+            android:textStyle="bold" android:fontFamily="@font/nunito_sans_extralight" android:textAllCaps="false"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/texviewInformationWeatherHeadline"
+                android:textAlignment="textStart" android:layout_weight="1" android:text="Wetter"
+                android:gravity="center_vertical" android:paddingStart="10dp" android:textColor="@color/colorAccent"
+                android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+        <TextView
+                android:text="Keine Daten vorhanden"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/texviewInformationWeatherValue"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end" android:paddingEnd="10dp" android:textColor="@color/colorAccent"
+                android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/textviewInformationTemperaturHeadline"
+                android:textAlignment="textStart" android:layout_weight="1" android:gravity="center_vertical"
+                android:paddingStart="10dp" android:text="Temperatur" android:textColor="@color/colorAccent"
+                android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+        <TextView
+                android:text="Keine Daten vorhanden"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/textviewInformationTemperaturValue"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end" android:paddingEnd="10dp" android:textColor="@color/colorAccent"
+                android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/textviewInformationPrecipitationHeadline"
+                android:textAlignment="textStart" android:layout_weight="1" android:gravity="center_vertical"
+                android:paddingStart="10dp" android:text="Niederschlag" android:textColor="@color/colorAccent"
+                android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+        <TextView
+                android:text="Keine Daten vorhanden"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/textviewInformationPrecipitationValue"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end" android:paddingEnd="10dp" android:textColor="@color/colorAccent"
+                android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/textviewInformationHumidityHeadline"
+                android:textAlignment="textStart" android:layout_weight="1" android:gravity="center_vertical"
+                android:paddingStart="10dp" android:text="Luftfeuchtigkeit" android:textColor="@color/colorAccent"
+                android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+        <TextView
+                android:text="Keine Daten vorhanden"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/textviewInformationHumidityValue"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end" android:paddingEnd="10dp" android:textColor="@color/colorAccent"
+                android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/textviewInformationWindspeedHeadline"
+                android:textAlignment="textStart" android:gravity="center_vertical"
+                android:paddingStart="10dp" android:text="Windgeschwindigkeit" android:textColor="@color/colorAccent"
+                android:layout_weight="1" android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+        <TextView
+                android:text="Keine Daten vorhanden"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/textviewInformationWindspeedValue"
+                android:gravity="center_vertical|end" android:paddingEnd="10dp" android:textColor="@color/colorAccent"
+                android:layout_weight="1" android:fontFamily="@font/nunito_sans_extralight" android:textStyle="bold"/>
+    </LinearLayout>
+    <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="4"/>
+
+</LinearLayout>
