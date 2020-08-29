@@ -1,11 +1,11 @@
 package niklasenglmeier.citycom
 
 import android.graphics.drawable.TransitionDrawable
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.support.constraint.ConstraintLayout
-import android.support.design.widget.FloatingActionButton
+import androidx.constraintlayout.widget.ConstraintLayout
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import android.util.Log
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
